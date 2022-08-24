@@ -17,6 +17,7 @@ class ComposerStaticInit3e2c78c4d331dfc9a191cea44408e1b8
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\HttpFoundation\\' => 33,
         ),
     );
@@ -29,6 +30,10 @@ class ComposerStaticInit3e2c78c4d331dfc9a191cea44408e1b8
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Symfony\\Component\\Routing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/routing',
         ),
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
