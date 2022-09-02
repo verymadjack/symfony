@@ -1,4 +1,5 @@
 <?php
+
 namespace Simplex;
 
 use Symfony\Component\EventDispatcher\EventDispatcher;
