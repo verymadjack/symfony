@@ -28,8 +28,8 @@ $controllerResolver = new HttpKernel\Controller\ControllerResolver();
 $argumentResolver = new HttpKernel\Controller\ArgumentResolver();
 
 //var_dump(file_exists("../src/Simplex/Framework.php"));
-
 $framework = new Framework($dispatcher, $matcher, $controllerResolver, $argumentResolver);
-$response = $framework->handle($request);
+$framework = new HttpKernel\HttpCache\HttpCache($framework, new HttpKernel\HttpCache\Store(__DIR__.'/../cache'));
 
-$response->send();
+$response = $framework->handle($request);
+$response->send();;
